@@ -25,6 +25,10 @@
 
 
 <style>
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
 /*======================================
 //--//-->   ABOUT
@@ -109,6 +113,44 @@
   transform: scale(1.1);
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+  #typing-animation {
+    font-size: 22px;
+  }
+  .about-info p, .about-info span {
+    word-wrap: break-word;
+    white-space: normal;
+  }
+  ul.about-info li.d-flex {
+    flex-wrap: nowrap !important;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+  .about-info li span:first-child {
+    font-weight: 600;
+    margin-right: 10px;
+    min-width: 130px;
+  }
+  .about-info li span:last-child {
+    flex: 1;
+    word-break: break-word;
+  }
+  .skill-mf span {
+    font-size: 14px;
+  }
+  .hero .text h1 {
+    font-size: 32px;
+  }
+  .hero .text h2 {
+    font-size: 24px;
+  }
+}
 
 </style>
 
@@ -119,7 +161,7 @@
 	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Omveer Singh Shekhawat</a>
+	      <a class="navbar-brand" href="index.html">Omveer Singh</a>
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -205,7 +247,7 @@
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
     	<div class="container">
 			<div class="row">
-				<div class="row d-flex align-items-stretch">
+				<div class="col-md-12 d-flex flex-wrap align-items-stretch">
 				<!-- <div class="row d-flex"> -->
 					<div class="col-md-6 col-lg-5 d-flex">
 						<div class="img-about img d-flex align-items-stretch">
@@ -280,8 +322,8 @@
 									<li class="d-flex"><span>Profile:</span> <span> Frontend Developer </span></li>
 									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
 									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>  HTML, CSS, JavaScript, React.js, Tailwind CSS, Redux, Router, GitHub</span></li>
+									<li class="d-flex"><span> Tools:</span> <span>VS code, GitHub,Vercel,</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span> &nbsp;HTML, CSS, JavaScript, React.js, Tailwind CSS, Redux, Router, GitHub</span></li>
 									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Teaching</span></li>
 									
 								</ul>
@@ -560,7 +602,7 @@
           			<span class="icon-phone2"></span>
           		</div>
           		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+919079725432</a></p>
+	            <p><a href="tel://9079725432">+919079725432</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
